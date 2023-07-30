@@ -74,3 +74,15 @@ body {
     object-position: center;
 }
 
+
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #5B6647;
+}
+#page2 svg{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
