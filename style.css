@@ -75,14 +75,33 @@ body {
 }
 
 
-
 #page2{
-    min-height: 100vh;
-    width: 100%;
+    min-height: 150vh;
     background-color: #5B6647;
+    position: relative;
 }
+
 #page2 svg{
     width: 100%;
     object-fit: cover;
-    object-position: center;
+    position: absolute;
+}
+
+#page2 #text-container{
+    position: relative;
+    padding-top: 12vw;
+    z-index: 99;
+}
+#text-container h2{
+    text-align: center;
+    font-size: 5.5vw;
+    line-height: 6vw;
+    /* color: #E3E3C4; */
+    color: #434B34;
+    font-family: PP woodland;
+    font-weight: 100;
+}
+
+#text-container h2 span{
+    font-family: PP woodland;
 }
