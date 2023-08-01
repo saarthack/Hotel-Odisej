@@ -20,8 +20,8 @@ tl.from("#page1 svg", {
     duration: 0.5,
   });
 
-var h2Data = document.querySelectorAll("#page2 h2");
-h2Data.forEach(function (elem) {
+var h2data = document.querySelectorAll("#page2 h2");
+h2data.forEach(function (elem) {
   var textData = elem.textContent;
   var splitedText = textData.split("");
   var clutter = "";
@@ -30,15 +30,26 @@ h2Data.forEach(function (elem) {
   });
   elem.innerHTML = clutter;
 });
+
 gsap.to("#page2 h2 span", {
-  color: "#E3E3C4",
-  stagger: 0.2,
+  color: "#e3e3c4",
+  stagger: 0.3,
   scrollTrigger: {
     trigger: "#page2 h2 span",
     scroller: "body",
-    markers: true,
-    start: "top 60%",
-    end: "top -30%",
+    start: "top 55%",
+    end: "top -5%",
     scrub: 2,
   },
 });
+
+
+gsap.to("#page2 #svg2,#page2 #svg3",{
+  left:'-100vw',
+  scrollTrigger:{
+    trigger:"#page2 #svg2",
+    scroller:"body",
+    markers:true,
+    scrub:2,
+  }
+})
