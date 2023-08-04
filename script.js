@@ -1,3 +1,19 @@
+// Swiper js ka code 
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
+
 var tl = gsap.timeline();
 tl.from("#page1 svg", {
   y: -40,
@@ -43,13 +59,12 @@ gsap.to("#page2 h2 span", {
   },
 });
 
-
-gsap.to("#page2 #svg2,#page2 #svg3",{
-  left:'-100vw',
-  scrollTrigger:{
-    trigger:"#page2 #svg2",
-    scroller:"body",
-    markers:true,
-    scrub:2,
-  }
-})
+gsap.to("#page2 #svg2,#page2 #svg3", {
+  left: "-100vw",
+  scrollTrigger: {
+    trigger: "#page2 #svg2",
+    scroller: "body",
+    markers: true,
+    scrub: 2,
+  },
+});

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:gilroy;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page4{
+  height: 100%;
+  width: 100%;
+  background-color: burlywood;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide:nth-last-child(1){
+  width: 20%;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(0.6) translateX(-40%) translateY(34%);
+  border-radius: 20px;
+
+}
+
+.swiper-slide {
+  width: 80%;
+  padding: 60px;
+}
+
+.swiper-slide-active img{
+  transform: scale(1) translateX(0%) translateY(0%);
+
+}
+
+
+.swiper-button-next{
+  color: #fff;
+  background-color: #434b34;
+  padding: 5px 20px;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+.swiper-button-prev{
+  color: #fff;
+  background-color: #434b34;
+  padding: 5px 20px;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
+
+.swiper-button-next::after{
+  content: "";
+}
+.swiper-button-prev::after{
+  content: "";
+}
+
+
+
+
